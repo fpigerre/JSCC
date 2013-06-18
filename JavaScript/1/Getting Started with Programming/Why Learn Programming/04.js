@@ -1,0 +1,1 @@
+prompt("Am I awesome?");
