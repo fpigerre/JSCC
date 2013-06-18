@@ -1,0 +1,4 @@
+JSCC
+====
+
+JavaScript for nubs
