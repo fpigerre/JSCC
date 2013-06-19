@@ -1,0 +1,38 @@
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+	computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+	computerChoice = "paper";
+} else {
+	computerChoice = "scissors";
+}
+//Function checks for both choices, user + computer choice to be the same.
+var compare = function(choice1, choice2) {
+if (choice1 === choice2) {
+return ("The result is a tie!");
+//Compares between choices if choice 1 is rock v v
+} if (choice1 === "rock") {
+if (choice2 === "scissors") {
+return ("rock wins");
+} else {
+return ("paper wins");
+}
+}
+if (choice2 === "rock") {
+if (choice2 === "scissors") {
+return ("paper wins");
+} else {
+return ("scissors wins");
+}
+}
+//Compares between choices if choice 1 is scissors v v
+if (choice1 === "scissors") {
+    if (choice2 === "rock") {
+        return ("rock wins");
+    } else {
+        return ("scissors wins");
+}
+}
+};
+compare(userChoice,computerChoice);
